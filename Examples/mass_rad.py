@@ -39,12 +39,13 @@ if __name__ == "__main__":
     number_h2o_layers = 0
 
     Core_rad_frac_guess = .54
-
+    Water_rad_frac_guess = 0.
     layers = [num_mantle_layers,num_core_layers,number_h2o_layers]
 
     Radius_planet = [0.5,.6,.7,.8,.9,1.,1.1,1.2,1.3,1.4,1.5]
 
     Mantle_potential_temp = 1700.
+    Water_potential_temp = 300.
 
     Mass = []
     CRF = []
@@ -61,7 +62,7 @@ if __name__ == "__main__":
 
     structure_params = [Pressure_range_mantle_UM, Temperature_range_mantle_UM, resolution_UM,
                         Pressure_range_mantle_LM, Temperature_range_mantle_LM, resolution_LM,
-                        Core_rad_frac_guess, Mantle_potential_temp]
+                        Core_rad_frac_guess, Mantle_potential_temp, Water_rad_frac_guess, Water_potential_temp]
     for i in Radius_planet:
         filename = Star
 
